@@ -11,11 +11,13 @@ class LunchScreen extends StatefulWidget {
 class _LunchScreenState extends State<LunchScreen> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
-    Future.delayed(const Duration(seconds: 5), () {
-      Navigator.of(context).pushReplacementNamed(home);
-    });
+    navigateToNextScreen();
+  }
+
+  void navigateToNextScreen() async {
+    await Future.delayed(const Duration(seconds: 5)); // Delay for 5 seconds
+    Navigator.of(context).pushReplacementNamed(home);
   }
 
   @override
