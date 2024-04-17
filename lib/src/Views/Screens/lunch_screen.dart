@@ -36,8 +36,8 @@ class _LunchScreenState extends State<LunchScreen> {
                 margin: const EdgeInsets.fromLTRB(0, 0, 0, 40),
                 child: Image.asset(
                   "assets/images/logo.png",
-                  height: 75.0,
-                  width: 75.0,
+                  height: 85.0,
+                  width: 85.0,
                 ),
               ),
             ],
@@ -54,15 +54,16 @@ class _LunchScreenState extends State<LunchScreen> {
                 color: Colors.black,
                 thickness: 100,
               ),
-              Column(
-                children: [
-                  Text("Developed by"),
-                  Text(
-                    "ucbethuel",
-                    style: TextStyle(letterSpacing: 5.0),
-                  ),
-                ],
-              )
+
+              // Column(
+              //   children: [
+              //     Text("Developed by"),
+              //     Text(
+              //       "ucbethuel",
+              //       style: TextStyle(letterSpacing: 5.0),
+              //     ),
+              //   ],
+              // ),
             ],
           )
         ],

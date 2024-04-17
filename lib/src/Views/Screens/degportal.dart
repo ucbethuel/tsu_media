@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
 class DegPortalScreen extends StatefulWidget {
@@ -14,6 +13,12 @@ class _DegPortalScreenState extends State<DegPortalScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
+
+    // StreamSubscription<List<ConnectivityResult>> subscription = Connectivity()
+    //     .onConnectivityChanged
+    //     .listen((List<ConnectivityResult> result) {
+    //   // Received changes in available connectivity types!
+    // });
   }
 
   @override
