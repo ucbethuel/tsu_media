@@ -43,29 +43,29 @@ class _LunchScreenState extends State<LunchScreen> {
             ],
           ),
           //Developer quick profile
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: [
-              CircleAvatar(
-                backgroundColor: Colors.grey,
-              ),
-              VerticalDivider(
-                color: Colors.black,
-                thickness: 100,
-              ),
+          // const Row(
+          //   mainAxisAlignment: MainAxisAlignment.center,
+          //   crossAxisAlignment: CrossAxisAlignment.end,
+          //   children: [
+          //     CircleAvatar(
+          //       backgroundColor: Colors.grey,
+          //     ),
+          //     VerticalDivider(
+          //       color: Colors.black,
+          //       thickness: 100,
+          //     ),
 
-              // Column(
-              //   children: [
-              //     Text("Developed by"),
-              //     Text(
-              //       "ucbethuel",
-              //       style: TextStyle(letterSpacing: 5.0),
-              //     ),
-              //   ],
-              // ),
-            ],
-          )
+          // Column(
+          //   children: [
+          //     Text("Developed by"),
+          //     Text(
+          //       "ucbethuel",
+          //       style: TextStyle(letterSpacing: 5.0),
+          //     ),
+          //   ],
+          // ),
+          //   ],
+          // )
         ],
       ),
     );

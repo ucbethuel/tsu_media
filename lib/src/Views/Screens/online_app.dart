@@ -9,16 +9,19 @@ class OnlineAppScreen extends StatefulWidget {
 }
 
 class _OnlineAppScreenState extends State<OnlineAppScreen> {
+  InAppWebViewController? _tsuOnlineScreeningPortalController;
   double _progress = 0;
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    _tsuOnlineScreeningPortalController?.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          "Online Screening Application",
-          style: TextStyle(color: Colors.white),
-        ),
-      ),
       body: Stack(
         children: [
           InAppWebView(

@@ -9,17 +9,19 @@ class TsuMainScreen extends StatefulWidget {
 }
 
 class _TsuMainScreenState extends State<TsuMainScreen> {
+  InAppWebViewController? _tsuMainPoratlController;
   double _progress = 0;
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    _tsuMainPoratlController?.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: const Color(0xFF179bd7),
-        title: const Text(
-          "TSU Portal",
-          style: TextStyle(color: Colors.white),
-        ),
-      ),
       body: Stack(
         children: [
           InAppWebView(

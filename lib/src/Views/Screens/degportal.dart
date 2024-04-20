@@ -9,6 +9,8 @@ class DegPortalScreen extends StatefulWidget {
 }
 
 class _DegPortalScreenState extends State<DegPortalScreen> {
+  InAppWebViewController? _tsuDegPortalController;
+
   @override
   void initState() {
     // TODO: implement initState
@@ -25,18 +27,13 @@ class _DegPortalScreenState extends State<DegPortalScreen> {
   void dispose() {
     // TODO: implement dispose
     super.dispose();
+    _tsuDegPortalController?.dispose();
   }
 
   double _progress = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          "TSU Degree Portal",
-          style: TextStyle(color: Colors.white),
-        ),
-      ),
       body: Stack(
         children: [
           InAppWebView(

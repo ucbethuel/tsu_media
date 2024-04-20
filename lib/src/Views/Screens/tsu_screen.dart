@@ -20,6 +20,12 @@ class _TsuPortalState extends State<TsuPortal> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          "TSU Media",
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        ),
+      ),
       body: screens[_currentPage],
       bottomNavigationBar: NavigationBar(
         destinations: const [
